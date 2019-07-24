@@ -29,9 +29,9 @@ def steam_price_checker():
     page = requests.get(URL, headers=headers)
 
     soup = BeautifulSoup(page.content, 'html.parser')
-
+    # bs4 uses 'attrs' as it's html .class key. I chose to use classes for Steam since there aren't specific ids
     game_title = soup.find(attrs={"apphub_AppName"}).get_text()
-    game_price = soup.find(attrs={"game_purchase_price price",}).get_text()
+    game_price = soup.find(attrs={"game_purchase_price price"}).get_text()
     discount = soup.find(attrs={"discount_final_price"}).get_text()
 
     # Steam has tons of html whitespace on the L and R of the price. Strip is needed
