@@ -1,6 +1,8 @@
 # steam-price-scraper
 A program to track the price of a game you want on the Steam store.
 
+***Please note that I use text wrap on my text editor for this in order to see long URLs and to keep input < 80 characters.
+
 This is a program I used to learn the smtp library (smtplib).
 I plan on making it a REST API to add or remove games and possibly manipulate other settings.
 
