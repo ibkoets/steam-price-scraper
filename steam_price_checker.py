@@ -13,7 +13,7 @@ import requests
 import smtplib
  
 
-localTime = time.asctime( time.localtime(time.time()) )
+
 # this is the item in the Steam store we will track
 URL = "https://store.steampowered.com/app/462770/Pyre/"
 
@@ -47,7 +47,7 @@ def steam_price_checker():
         notify_email()     
     
     else:
-        print(f"\nLast price check run: {localTime}")
+        print("\nPrice checked")
         print()
 
 # This function will run at the end of price checker if price condition is met.
