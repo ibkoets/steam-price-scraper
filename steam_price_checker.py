@@ -71,7 +71,7 @@ def notify_email():
     server.sendmail('ibkoets@gmail.com', 'ibkoets@gmail.com', msg)
 
     print('An email was sent to the requested email.')
-    # SHUT YOUR SERVER!
+    # CLOSE YOUR SERVER!
     server.quit()
 
 # The loop will run until the game drops below desired price. time uses unit seconds so this loop will run twice a day.
